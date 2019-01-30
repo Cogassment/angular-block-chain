@@ -1,0 +1,121 @@
+header {
+    position: relative;
+    display: table;
+    width: 100%;
+    background: purple;
+    z-index: 1;
+}
+.header_table_cell {
+    display: table-cell;
+    vertical-align: middle;
+	text-align:center;
+	font-weight:bold;
+    color:purple;
+}
+
+.dropdown.open #userDropDown {
+    display: block;
+}
+
+.quiz_users .dropdown-toggle {
+    position: relative;
+    text-align: left;
+    border: 0px;
+    background: none;
+    color: inherit;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+    .quiz_users .dropdown-toggle::after {
+        display: block;
+        width: 0;
+        height: 0;
+        margin-left: 0.255em;
+        vertical-align: 0.255em;
+        content: "";
+        border-top: 0.3em solid;
+        border-right: 0.3em solid transparent;
+        border-left: 0.3em solid transparent;
+        position: absolute;
+        right: 15px;
+        color: #fff;
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+    }
+
+#userDropDown {
+    margin-top: 15px;
+    padding: 0px;
+}
+
+#userDropDown li {
+cursor: pointer;
+font-weight: 600;
+color: purple;
+}
+
+#userDropDown li:hover {
+    color: #ffffff;
+    background: purple;
+}
+
+#userDropDown li a {
+    display: block;
+    border: none;
+    color: inherit;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+
+.quiz_users {
+    color: #ffffff;
+    white-space: nowrap;
+    margin-right: 15px;
+}
+
+.quiz_user_name {
+    font-weight: 600;
+    cursor: pointer;
+    max-width: 250px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position:relative;
+    top:5px;
+}
+
+.quiz_user_type {
+    display: block;
+    font-size: 12px;
+    position:relative;
+    top:10px;
+}
+
+.input-group-btn.open .dropdown-menu {
+    display: block;
+}
+
+
+.header_table_cell:first-child {
+    width: 15%;
+}
+
+.header_table_cell:last-child {
+    width: 15%;
+}
+
+.quiz_header_logo 
+{
+    position: relative;
+    /* background: url("/assets/common/moe-logo.png") no-repeat; */
+    background-size: cover;
+    background-position: 0px -1px;
+    margin: 3px;
+    width: 150px;
+    height: 65px;
+    border: 0px solid;
+    display: block;
+    cursor: pointer;
+}

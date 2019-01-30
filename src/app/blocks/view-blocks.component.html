@@ -1,0 +1,44 @@
+<div class="container-fluid container-margin-top">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4>Blocks</h4>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12" *ngIf="!blocks?.length">
+                    No data found
+                </div>
+                <div class="col-md-6" *ngFor="let block of blocks">
+                    <ul class="list-group row">
+                        <br>
+                        <li class="list-group-item col-md-12">
+                            Hash Id :
+                            <b>{{block.hash}}</b>
+                        </li>
+                        <li class="list-group-item col-md-12">
+                            ExtraData : {{block.extraData}}
+                        </li>
+                        <li class="list-group-item col-md-12">GasLimit : {{block.gasLimit}}</li>
+                        <li class="list-group-item col-md-12">GasUsed : {{block.gasUsed}}</li>
+                        <!-- <li class="list-group-item col-md-12">LogsBloom {{block.logsBloom}}</li> -->
+                        <li class="list-group-item col-md-12">Miner : {{block.miner}}</li>
+                        <li class="list-group-item col-md-12">MixHash : {{block.mixHash}}</li>
+                        <li class="list-group-item col-md-12">Once : {{block.nonce}}</li>
+                        <li class="list-group-item col-md-12">Number : {{block.number}}</li>
+                        <li class="list-group-item col-md-12">ParentHash : {{block.parentHash}}</li>
+                        <li class="list-group-item col-md-12">ReceiptsRoot : {{block.receiptsRoot}}</li>
+                        <li class="list-group-item col-md-12">Sha3Uncles : {{block.sha3Uncles}}</li>
+                        <li class="list-group-item col-md-12">Size : {{block.size}}</li>
+                        <li class="list-group-item col-md-12">StateRoot : {{block.stateRoot}}</li>
+                        <li class="list-group-item col-md-12">Timestamp : {{block.timestamp}}</li>
+                        <li class="list-group-item col-md-12">TotalDifficulty : {{block.totalDifficulty}}</li>
+                        <li class="list-group-item col-md-12">TransactionsRoot : {{block.transactionsRoot}}</li>
+                        <li class="list-group-item col-md-12">Transactions : {{ block.transactions | json }}</li>
+                        <li class="list-group-item col-md-12">Uncles : {{ block.uncles | json }}</li>
+                        <li class="list-group-item col-md-12">Difficulty : {{block.difficulty}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

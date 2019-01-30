@@ -1,0 +1,17 @@
+footer{
+    /* position: relative; */
+    position:fixed;
+    width: 100%;
+    background: purple;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 10px;
+    bottom: 0px;
+}
+
+.footer-a{
+    background: transparent;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+}

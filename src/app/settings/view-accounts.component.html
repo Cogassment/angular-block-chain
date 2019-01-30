@@ -1,0 +1,28 @@
+<div class="container-fluid container-margin-top">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4>View Account Details</h4>
+        </div>
+        <div class="panel-body">
+            <div class="col-md-8 col-md-offset-2">
+                <table class="table table-hover">
+                    <thead>
+                        <th>Account</th>
+                        <th>Balance</th>
+                        <th>Status</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let account of accounts">
+                            <td class="col-md-8">{{account.accountNumber}}</td>
+                            <td class="col-md-2">{{account.balanceAmount}}</td>
+                            <td class="col-md-2">{{account.status}}</td>
+                        </tr>
+                        <tr *ngIf="!accounts?.length">
+                            <td colspan="3"> No data found...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

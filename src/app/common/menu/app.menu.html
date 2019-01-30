@@ -1,0 +1,100 @@
+<div class="side-bar-height" style="background-color: #d8d6d6;">
+    <div class="row" id="body-row">
+        <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+            <ul class="list-group">
+                <li style="background-color: #d8d6d6;" class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                    <small>MAIN MENU</small>
+                </li>
+                <a routerLink="/dashboard" style="background-color: #d8d6d6;" href="#submenu1" data-toggle="collapse" aria-expanded="false"
+                    class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-home fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Dashboard</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <a style="background-color: #d8d6d6;" href="#submenuTransaction" data-toggle="collapse" aria-expanded="false" class="is-parent bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-exchange fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Transaction</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <div id='submenuTransaction' class="collapse sidebar-submenu">
+                    <a routerLink="/send-transaction" style="background-color: #eeeeee;" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span style="padding-left: 15px;" class="fa fa-money fa-fw mr-3"></span>
+                        <span style="padding-left: 15px;" class="menu-collapsed">Send Transaction</span>
+                    </a>
+                    <a style="background-color: #eeeeee;" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span style="padding-left: 15px;" class="fa fa-history fa-fw mr-3"></span>
+                        <span style="padding-left: 15px;" class="menu-collapsed">View Transaction</span>
+                    </a>
+                </div>
+                <a style="background-color: #d8d6d6;" href="#submenuBlocks" data-toggle="collapse" aria-expanded="false" class="is-parent bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-cubes fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Blocks</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <div id='submenuBlocks' class="collapse sidebar-submenu">
+                    <a routerLink="/view-blocks" style="background-color: #eeeeee;" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span style="padding-left: 15px;" class="fa fa-connectdevelop fa-fw mr-3"></span>
+                        <span style="padding-left: 15px;" class="menu-collapsed">View Blocks</span>
+                    </a>
+                </div>
+                <a style="background-color: #d8d6d6;" href="#submenuSettings" data-toggle="collapse" aria-expanded="false" class="is-parent bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-cog fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Settings</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <div id='submenuSettings' class="collapse sidebar-submenu">
+                    <a routerLink="/add-peer" style="background-color: #eeeeee;" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span style="padding-left: 15px;" class="fa fa-plus fa-fw mr-3"></span>
+                        <span style="padding-left: 15px;" class="menu-collapsed">Add Peer</span>
+                    </a>
+                    <a routerLink="/view-peers" style="background-color: #eeeeee;" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span style="padding-left: 15px;" class="fa fa-sitemap fa-fw mr-3"></span>
+                        <span style="padding-left: 15px;" class="menu-collapsed">View Peers</span>
+                    </a>
+                    <a routerLink="/add-account" style="background-color: #eeeeee;" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span style="padding-left: 15px;" class="fa fa-plus fa-fw mr-3"></span>
+                        <span style="padding-left: 15px;" class="menu-collapsed">Add Account</span>
+                    </a>
+                    <a routerLink="/view-account" style="background-color: #eeeeee;" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span style="padding-left: 15px;" class="fa fa-street-view fa-fw mr-3"></span>
+                        <span style="padding-left: 15px;" class="menu-collapsed">View Account</span>
+                    </a>
+                    <a style="background-color: #eeeeee;" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span style="padding-left: 15px;" class="fa fa-unlock fa-fw mr-3"></span>
+                        <span style="padding-left: 15px;" class="menu-collapsed">UnLock Account</span>
+                    </a>
+                    <a style="background-color: #eeeeee;" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span style="padding-left: 15px;" class="fa fa-balance-scale fa-fw mr-3"></span>
+                        <span style="padding-left: 15px;" class="menu-collapsed">View Balance</span>
+                    </a>
+                </div>
+                <a style="background-color: #d8d6d6;" href="#submenuHelp" data-toggle="collapse" aria-expanded="false" class="is-parent bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-question-circle fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Help</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <div id='submenuHelp' class="collapse sidebar-submenu">
+                    <a style="background-color: #eeeeee;" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span style="padding-left: 15px;" class="fa fa-exclamation fa-fw mr-3"></span>
+                        <span style="padding-left: 15px;" class="menu-collapsed">Help 1</span>
+                    </a>
+                    <a style="background-color: #eeeeee;" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span style="padding-left: 15px;" class="fa fa-tasks fa-fw mr-3"></span>
+                        <!-- gavel -->
+                        <span style="padding-left: 15px;" class="menu-collapsed">Help 2</span>
+                    </a>
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>
